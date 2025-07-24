@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <style>
+      body {
+        font-family: system-ui, sans-serif;
+        padding: 12px;
+        width: 280px;
+      }
+      input, button {
+        width: 100%;
+        padding: 8px 10px;
+        font-size: 14px;
+        margin-top: 6px;
+      }
+      label {
+        font-size: 13px;
+        margin-top: 8px;
+        display: block;
+      }
+      #status {
+        margin-top: 10px;
+        font-size: 12px;
+        color: #555;
+        word-break: break-all;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>Switch to Invidious</h3>
+
+    <label for="instanceInput">Invidious Instance:</label>
+    <input id="instanceInput" type="text" placeholder="https://inv.nadeko.net/" />
+
+    <button id="switchBtn">SWITCH TO INVIDIOUS</button>
+    <div id="status"></div>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
